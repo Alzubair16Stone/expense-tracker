@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const navLinks = [
     { id: 1, name: "Tracker", path: "/" },
-    { id: 2, name: "How to use?", path: "/how" },
     { id: 3, name: "Expence(Charts)", path: "/expence" }
 ]
 

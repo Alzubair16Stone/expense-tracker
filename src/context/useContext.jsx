@@ -24,7 +24,7 @@ const ExpenseProvider = ({ children }) => {
     }
 
     const updateExpense = (e) => {
-
+        e.preventDefault();
         const newExpense = {
             id: getUnixTime(defaultDate),
             name: expense,
@@ -33,7 +33,9 @@ const ExpenseProvider = ({ children }) => {
         }
 
         setExpenses([...expenses, newExpense]);
-
+        setExpense("");
+        setValue("");
+        setIsUpdate(false)
     }
 
     // Pro-tip: Keep localStorage in sync whenever expences changes

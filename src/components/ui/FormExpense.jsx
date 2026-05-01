@@ -57,7 +57,7 @@ const FormExpense = ({ buttonAddOrUpdate }) => {
                     {buttonAddOrUpdate}
                 </button>
                 <button
-                    className={`bg-[#0000001a] p-2 w-100 font-bold rounded  transition delay-150 duration-300 ease-in-out border-[#06bbafa5] border hover:border-2 ${expense == "" || value == "" ? "opacity-80 cursor-wait" : ""}`}
+                    className={`bg-[#0000001a] p-2 w-100 font-bold rounded  transition delay-150 duration-300 ease-in-out border-[#06bbafa5] border hover:border-2 ${expense == "" || value == "" ? "opacity-60" : ""}`}
                     onClick={() => {
                         setExpense("");
                         setValue("")

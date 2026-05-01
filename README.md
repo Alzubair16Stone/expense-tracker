@@ -11,7 +11,7 @@
 
 ---
 
-## Make a Expenses page(---)
+## Make a Expenses page(*)
 * the user can update any expenses
 * the user can delete any expenses
 * the user can add expenses

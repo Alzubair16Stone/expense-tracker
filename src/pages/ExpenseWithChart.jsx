@@ -19,9 +19,9 @@ const ExpenseWithChart = () => {
         <div className='flex justify-between items-center px-20'>
             <div className='flex flex-col justify-between my-10 items-center min-h-100'>
                 <FormExpense buttonAddOrUpdate={isUpdate ? "Update" : "Add"} />
-                <ul className='flex flex-col gap-3 my-6'>
+                <ul className='flex flex-col gap-3 my-6 w-100'>
                     {expenses.map((expense, index) => (
-                        <li className={`flex justify-between items-center gap-20 bg-[#e2b7b7] max-w-200 py-2 px-10 rounded`} key={index}>
+                        <li className={`flex justify-between items-center gap-20 bg-[#5656563d] py-2 px-10 rounded`} key={index}>
                             Name: {expense.name} <br />
                             Value: {Number(expense.value)}<br />
                             Date: {expense.date}
