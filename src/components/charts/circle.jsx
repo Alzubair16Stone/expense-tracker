@@ -13,18 +13,18 @@ const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 
 const ExpensePie = () => {
 
-    const { expences } = useContext(ExpenseContext);
+    const { expenses } = useContext(ExpenseContext);
 
-    if (!expences || expences.length === 0) {
-        return <div className="h-64 flex items-center justify-center border-2 border-dashed rounded">No data to display</div>;
-    }
+    console.log(expenses.length);
+
+
 
     return (
-        <div className="w-60 h-100">
+        <div className={` w-60 h-100`} >
             <ResponsiveContainer>
                 <PieChart>
                     <Pie
-                        data={expences.map(item => ({
+                        data={expenses.map(item => ({
                             ...item,
                             value: Number(item.value)
                         }))}
@@ -35,7 +35,7 @@ const ExpensePie = () => {
                         paddingAngle={5}
                         dataKey="value"
                     >
-                        {expences.map((entry, index) => (
+                        {expenses.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                         ))}
                     </Pie>
